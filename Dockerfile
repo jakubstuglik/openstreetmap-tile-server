@@ -110,7 +110,7 @@ RUN mkdir -p /home/renderer/src \
 # Install mod_tile and renderd
 RUN mkdir -p /home/renderer/src \
  && cd /home/renderer/src \
- && git clone -b switch2osm https://github.com/SomeoneElseOSM/mod_tile.git --depth 1 \
+ && git clone https://github.com/openstreetmap/mod_tile.git --depth 1 \
  && cd mod_tile \
  && rm -rf .git \
  && ./autogen.sh \
